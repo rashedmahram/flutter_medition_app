@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:maditation_app/screens/details/details_screen.dart';
 
 import 'card.dart';
 
@@ -19,7 +20,14 @@ class ListViewItems extends StatelessWidget {
           CategoryCard(
             title: "Diet Recomandation",
             image: "assets/icons/Hamburger.svg",
-            press: () {},
+            press: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) {
+                  return DetailsScreen();
+                }),
+              );
+            },
           ),
           CategoryCard(
             title: "Yoga",

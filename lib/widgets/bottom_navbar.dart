@@ -19,17 +19,18 @@ class BottomNavBar extends StatelessWidget {
         children: [
           ButtomBarItem(
             pres: () {},
-            title: 'Home',
+            title: 'Today',
             image: "assets/icons/calendar.svg",
           ),
           ButtomBarItem(
             pres: () {},
-            title: 'Home',
+            title: 'All Excrecises',
             image: "assets/icons/gym.svg",
+            isActive: true,
           ),
           ButtomBarItem(
             pres: () {},
-            title: 'Home',
+            title: 'Settings',
             image: "assets/icons/Settings.svg",
           ),
         ],
